@@ -1,0 +1,1020 @@
+class Content extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+        <!-- <canvas class="cursor-trail d-none d-xl-block" id="trail"></canvas> -->
+
+    <!-- Preload -->
+    <div class="preload preload-container" id="preload">
+        <div class="preload-logo">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <!-- /Preload -->
+
+    <div class="overlay-pop"></div>
+    <main id="wrapper">
+
+        <!-- User Sidebar -->
+        <div class="sidebar-user" style="margin-top: 15px;">
+            <div class="wrap">
+                <div class="user-image">
+                    <div class="image">
+                        <img loading="lazy" width="468" height="856" src="assets/images/avatar/avatar-boy.jpeg" alt="Image">
+                    </div>
+                    
+                </div>
+                <ul class="tf-social-icon-2 user-social d-grid">
+                    <!-- <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li> -->
+                    <li><a href="https://www.linkedin.com/in/jonathan-mark-8b59a7298/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/jonathanmark.0710/"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <div class="user-info">
+                    <h5 class="greeting letter-space--2 text-white animationtext clip">
+                        Hey, I’m
+                        <span class="cd-words-wrapper">
+                            <span class="item-text is-visible">Jonathan</span>
+                            <span class="item-text is-hidden">Software Engineer</span>
+                            <span class="item-text is-hidden">Developer</span>
+                        </span>
+                    </h5>
+                    <p class="introduce text-white-56 letter-space--05 text-body-3">
+                        I help startups grow with smart design and
+                        no-code development, based in Cupertino, CA.
+                    </p>
+                    <div class="br-line"></div>
+                    <div class="action-group">
+                        <a href="#" class="tf-btn-action">
+                            <span class="ic-wrap">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                            <span class="text text-body-3 letter-space--05 fw-medium">
+                                Let’s talk
+                            </span>
+                            <span class="ic-wrap">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                        </a>
+                        <a href="assets/images/brand/mycv.pdf" target="_blank" class="action-down">
+    <i class="fa-solid fa-download"></i>
+    <span class="text-body-3">Download CV</span>
+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /User Sidebar -->
+
+        <div class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-8 ms-auto">
+                        <div class="wrap-container">
+                            <!-- Intro -->
+                            <div id="home" class="section-intro flat-spacing">
+                                <div class="intro-author effectFade fadeUp no-div">
+                                    <div class="author-image">
+                                        <img loading="lazy" width="23" height="31" src="assets/images/avatar/avatar-boy.png" alt="Image">
+                                    </div>
+                                    <div class="author-info letter-space--05">
+                                        <p class="info_name text-black">Jonathan Mark</p>
+                                        <p class="info_duty text-black-50 text-body-3">Software Engineer & Full-Stack Developer
+                                        </p>
+                                    </div>
+                                </div>
+                                <h1 class="intro-title letter-space--2 split-text effect-blur-fade">
+                                    I don’t just write 
+                                    <span class="">code—</span><br>
+                                    <span class="type-2"th>I solve</span>
+                                    problems.
+                                </h1>
+                                <div class="intro-item">
+                                    <div class="scribble-wrap">
+                                        <svg class="scribble" viewBox="0 0 772 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <linearGradient id="paint0_linear_268_462" x1="12" y1="107" x2="752" y2="66"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop offset="0" stop-color="#F5F5F5" />
+                                                    <stop class="bred" offset="0.466346" stop-color="#00DE51" />
+                                                    <stop offset="1" stop-color="#F5F5F5" />
+                                                </linearGradient>
+                                            </defs>
+
+                                            <path id="scribblePath"
+                                                d="M12 104.315C34.6667 116.269 92.8 137.913 144 128.853C208 117.528 317 33.5324 356 27.8698C395 22.2072 502 20 530 79.1463C557.711 137.682 582 217 477 281.743C423.902 314.483 308 281.433 365 188C422 94.5672 544 65.6205 597 81.6645C650 97.7085 732 88.2708 752 64.6767"
+                                                stroke="url(#paint0_linear_268_462)" stroke-width="50" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    
+                                </div>
+                                <div class="box-counter effectFade fadeUp no-div">
+                                    <div class="wg-counter">
+                                        <p class="counter h1 d-flex font-2 letter-space--2">
+                                            0<span class="number" data-speed="1000" data-to="3">0</span>
+                                            +
+                                        </p>
+                                        <p class="text text-black-56 text-body-3">
+                                            Year of experience
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="intro-client letter-space--05 text-body-3">
+                                    <i class="icon icon-global-elip"></i>
+                                    Our clients (2023 - 2026)
+                                </p>
+
+                                <div class="infiniteSlide-brand">
+                                    <div class="infiniteSlide" data-clone="3">
+                                        <!-- Clone 1 -->
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/mahesha.png"
+                                                src="assets/images/brand/mahesha.png" alt="Image">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/asta.png"
+                                                src="assets/images/brand/asta.png" alt="Image">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/am.png"
+                                                src="assets/images/brand/am.png" alt="Image">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/webpos.png"
+                                                src="assets/images/brand/webpos.png" alt="Image">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/gold.png"
+                                                src="assets/images/brand/gold.png" alt="Image">
+                                        </div>
+                                        <!-- Clone 2 -->
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/mahesha.png"
+                                                src="assets/images/brand/mahesha.png" alt="Image">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/asta.png"
+                                                src="assets/images/brand/asta.png" alt="Image">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/am.png"
+                                                src="assets/images/brand/am.png" alt="Image">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/webpos.png"
+                                                src="assets/images/brand/webpos.png" alt="Image">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/gold.png"
+                                                src="assets/images/brand/gold.png" alt="Image">
+                                        </div>
+                                        <!-- Clone 3 -->
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/mahesha.png"
+                                                src="assets/images/brand/mahesha.png" alt="Image">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/asta.png"
+                                                src="assets/images/brand/asta.png" alt="Image">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/am.png"
+                                                src="assets/images/brand/am.png" alt="Image">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/webpos.png"
+                                                src="assets/images/brand/webpos.png" alt="Image">
+                                        </div>
+                                        <div class="image-brand">
+                                            <img class="image-switch" data-dark="assets/images/brand/gold.png"
+                                                src="assets/images/brand/gold.png" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /About -->
+
+                            <!-- Education & Experience -->
+                            <div id="education" class="section-education-experience flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-edu"></i>
+                                    Education and Qualifications
+                                </div>
+                                <div class="timeline scroll-down">
+                                    <div class="timeline-line">
+                                        <div class="prg-line"></div>
+                                    </div>
+                                    <!-- Item 1 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">2009 - 2020</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/logo/stcb.webp" loading="lazy"  style="width: 70px;" src="assets/images/logo/stcb.webp" alt="Image">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">St. Thomas' College Bandarawele</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Completed G.C.E. Ordinary Level (O/L) education with a focus on academic fundamentals.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 2 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">2023 - NOW</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/logo/jiat.webp" style="width: 70px;"
+                                                    src="assets/images/logo/jiat.webp" alt="Image">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">Java Institute for Advanced Technology</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Currently pursuing studies in Software Engineering, focusing on programming, system design, and modern development practices.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 3 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">2023 - NOW</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/logo/bcu.webp" style="width: 70px;"
+                                                    src="assets/images/logo/bcu.webp" alt="Image">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">Birmingham City University</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Currently pursuing a degree in Software Engineering, developing strong skills in programming, system design, and modern technologies.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 4 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">2023 Awarded</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/logo/ukawards.png" style="width: 70px;"
+                                                    src="assets/images/logo/ukawards.png" alt="Image">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">UK Awards 1</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Completed Year 1 of the Software Engineering program under an internationally recognized UK awarding body.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 5 -->
+                                    <div class="timeline-item effectFade fadeUp no-div">
+                                        <p class="timeline-date text-black-56">2025 Awarded</p>
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="icon">
+                                                <img class="image-switch" data-dark="assets/images/logo/ukawards.png" style="width: 70px;"
+                                                    src="assets/images/logo/ukawards.png" alt="Image">
+                                            </div>
+                                            <p class="timeline-role fw-medium text-black-72">UK Awards 2</p>
+                                            <p class="timeline-desc text-body-3 text-black-56">
+                                                Completed the second year of higher education in Software Engineering, advancing knowledge in development and system design.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Education & Experience -->
+
+                            <!-- Work Highlight -->
+                            <div id="work" class="section-work flat-spacing">
+                                <div class="sect-tag text-caption fw-medium">
+                                    <i class="icon icon-high-light"></i>
+                                    Research 
+                                </div>
+                                <div class="work-list element-sticky">
+                                    <div class="sticky-item">
+                                        <div class="wg-work">
+                                            <div class="work-image">
+                                                <img loading="lazy" width="700" height="427" src="assets/images/section/research2.jpg" alt="Image">
+                                            </div>
+                                            <div class="wrap">
+                                                <div class="work-content">
+                                                    <div class="w-image">
+                                                        <img loading="lazy" width="468" height="856" src="assets/images/section/research1.jpg"
+                                                            alt="Image">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="content-top">
+                                                            <!-- <div class="w-logo">
+                                                                <img loading="lazy" width="40" height="40" src="assets/images/logo/logo-2.svg"
+                                                                    alt="Image">
+                                                            </div> -->
+                                                            <h4 class="w-title letter-space--2 text-white-72">
+                                                                Launching Soon
+                                                            </h4>
+                                                            <p class="w-desc text-white-56 text-body-3">
+                                                                We’re crafting a powerful cyber security brand and platform—designed to safeguard systems, data, and people with cutting-edge technology and trust-first design.
+                                                            </p>
+                                                            <div class="w-highlight">
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">
+                                                                        Year
+                                                                    </p>
+                                                                    <p class="text-body-1 text-white-72">
+                                                                        2026
+                                                                    </p>
+                                                                </div>
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">
+                                                                        What’s Coming
+                                                                    </p>
+                                                                    <p class="text-body-1 text-white-72">
+                                                                        Brand Identity · Secure Website · Threat Protection Solutions
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-tag-list">
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Brand
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Website
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Webflow
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-bottom">
+                                                            <div class="br-line"></div>
+                                                            <div class="group-action">
+                                                                <a href="#" class="tf-btn-action style-white">
+                                                                    <span class="ic-wrap">
+                                                                        <i class="icon icon-arrow-right-top"></i>
+                                                                    </span>
+                                                                    <span class="text text-body-3 letter-space--05 fw-medium">
+                                                                        Let’s talk
+                                                                    </span>
+                                                                    <span class="ic-wrap">
+                                                                        <i class="icon icon-arrow-right-top"></i>
+                                                                    </span>
+                                                                </a>
+                                                                <p class="text-white-40">
+                                                                    <span class="text-white-72">01</span> / 03
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="sticky-item">
+                                        <div class="wg-work">
+                                            <div class="work-image">
+                                                <img loading="lazy" width="700" height="427" src="assets/images/section/work-2.jpg" alt="Image">
+                                            </div>
+                                            <div class="wrap">
+                                                <div class="work-content">
+                                                    <div class="w-image">
+                                                        <img loading="lazy" width="468" height="856" src="assets/images/section/work-2.jpg"
+                                                            alt="Image">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="content-top">
+                                                            <div class="w-logo">
+                                                                <img loading="lazy" width="40" height="40" src="assets/images/logo/logo-2.svg"
+                                                                    alt="Image">
+                                                            </div>
+                                                            <h4 class="w-title letter-space--2 text-white-72">
+                                                                Durotan
+                                                            </h4>
+                                                            <p class="w-desc text-white-56 text-body-3">
+                                                                Minimal e-commerce identity and website crafted to
+                                                                highlight
+                                                                timeless fashion essentials
+                                                            </p>
+                                                            <div class="w-highlight">
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">
+                                                                        Year
+                                                                    </p>
+                                                                    <p class="text-body-1 text-white-72">
+                                                                        2024
+                                                                    </p>
+                                                                </div>
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">
+                                                                        Role
+                                                                    </p>
+                                                                    <p class="text-body-1 text-white-72">
+                                                                        Lead Product Designer
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-tag-list">
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Brand
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Website
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Webflow
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-bottom">
+                                                            <div class="br-line"></div>
+                                                            <div class="group-action">
+                                                                <a href="#" class="tf-btn-action style-white">
+                                                                    <span class="ic-wrap">
+                                                                        <i class="icon icon-arrow-right-top"></i>
+                                                                    </span>
+                                                                    <span class="text text-body-3 letter-space--05 fw-medium">
+                                                                        Let’s talk
+                                                                    </span>
+                                                                    <span class="ic-wrap">
+                                                                        <i class="icon icon-arrow-right-top"></i>
+                                                                    </span>
+                                                                </a>
+                                                                <p class="text-white-40">
+                                                                    <span class="text-white-72">02</span> / 03
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sticky-item">
+                                        <div class="wg-work">
+                                            <div class="work-image">
+                                                <img loading="lazy" width="700" height="427" src="assets/images/section/work-3.jpg" alt="Image">
+                                            </div>
+                                            <div class="wrap">
+                                                <div class="work-content">
+                                                    <div class="w-image">
+                                                        <img loading="lazy" width="468" height="856" src="assets/images/section/work-3.jpg"
+                                                            alt="Image">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="content-top">
+                                                            <div class="w-logo">
+                                                                <img loading="lazy" width="40" height="40" src="assets/images/logo/logo-2.svg"
+                                                                    alt="Image">
+                                                            </div>
+                                                            <h4 class="w-title letter-space--2 text-white-72">
+                                                                Nike Campaign
+                                                            </h4>
+                                                            <p class="w-desc text-white-56 text-body-3">
+                                                                Landing experience for Nike’s urban campaign, built to
+                                                                inspire movement and brand loyalty
+                                                            </p>
+                                                            <div class="w-highlight">
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">
+                                                                        Year
+                                                                    </p>
+                                                                    <p class="text-body-1 text-white-72">
+                                                                        2024
+                                                                    </p>
+                                                                </div>
+                                                                <div class="box-high">
+                                                                    <p class="text-body-3 text-white-56">
+                                                                        Role
+                                                                    </p>
+                                                                    <p class="text-body-1 text-white-72">
+                                                                        Lead Product Designer
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-tag-list">
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Brand
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Website
+                                                                    </span>
+                                                                </div>
+                                                                <div class="tag">
+                                                                    <span class="text-body-3 fw-medium text-white-72">
+                                                                        Webflow
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-bottom">
+                                                            <div class="br-line"></div>
+                                                            <div class="group-action">
+                                                                <a href="#" class="tf-btn-action style-white">
+                                                                    <span class="ic-wrap">
+                                                                        <i class="icon icon-arrow-right-top"></i>
+                                                                    </span>
+                                                                    <span class="text text-body-3 letter-space--05 fw-medium">
+                                                                        Let’s talk
+                                                                    </span>
+                                                                    <span class="ic-wrap">
+                                                                        <i class="icon icon-arrow-right-top"></i>
+                                                                    </span>
+                                                                </a>
+                                                                <p class="text-white-40">
+                                                                    <span class="text-white-72">03</span> / 03
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- /Work Highlight -->
+
+                            <!-- Service -->
+                            <div id="service" class="section-service flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div mb-0">
+                                    <i class="icon icon-service"></i>
+                                    Projects
+                                </div>
+                                <div class="" id="accordion-service">
+                                    <div class="service-accordion_item scrolling-effect effectBottom" role="presentation">
+                                        <div class="accordion-action" data-bs-target="#service-1" role="button" data-bs-toggle="collapse"
+                                            aria-controls="service-1" aria-expanded="true">
+                                            <h4 class="text letter-space--2 text-black-72">Web Based POS System</h4>
+                                            <div class="ic-wrap">
+                                                <span class="ic-accordion-custom"></span>
+                                            </div>
+                                        </div>
+                                        <div id="service-1" class="collapse show" data-bs-parent="#accordion-service">
+                                            <div class="accordion-content">
+                                                <div class="tf-grid-layout sm-col-2">
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img width="340" height="206" src="assets/images/section/webpos1.png" alt="Image">
+                                                        </div>
+                                                    </div>
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img width="340" height="206" src="assets/images/section/webpos2.png" alt="Image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="service-tag">
+                                                    <a href="#" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                       Web Application Development
+                                                    </a>
+                                                    <a href="#" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                       POS System Architecture
+                                                    </a>
+                                                    <a href="#" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Backend & Database Integration
+                                                    </a>
+                                                </div>
+                                                <p class="service-desc text-black-56">
+                                                    I developed a fully functional web-based POS system using HTML, CSS, JavaScript, PHP, and MySQL—focused on efficient sales processing, inventory management, and real-time data handling for seamless business operations.
+                                                    <br> <br> Engineered a complete POS solution with secure backend logic, dynamic frontend interactions, and a robust MySQL database for handling real-time sales and inventory operations.
+                                                </p>
+                                                <div class="service-btn">
+    <a href="https://github.com/integra8technologies/WebPOSLk" target="_blank" class="tf-btn">
+        <span>View GitHub Repository</span>
+    </a>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="br-line scrolling-effect effectBottom"></div>
+                                    <div class="service-accordion_item scrolling-effect effectBottom" role="presentation">
+                                        <div class="accordion-action collapsed" data-bs-target="#service-2" role="button" data-bs-toggle="collapse"
+                                            aria-controls="service-2" aria-expanded="true">
+                                            <h4 class="text letter-space--2 text-black-72">Student Teacher Portal</h4>
+                                            <div class="ic-wrap">
+                                                <span class="ic-accordion-custom"></span>
+                                            </div>
+                                        </div>
+                                        <div id="service-2" class="collapse" data-bs-parent="#accordion-service">
+                                            <div class="accordion-content">
+                                                <div class="tf-grid-layout sm-col-2">
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img width="340" height="206" src="assets/images/section/portal1.png" alt="Image">
+                                                        </div>
+                                                    </div>
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img width="340" height="206" src="assets/images/section/portal2.png" alt="Image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="service-tag">
+                                                    <a href="#" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        System Management
+                                                    </a>
+                                                    <a href="#" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Web Application
+                                                    </a>
+                                                    <a href="#" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Role-Based Access System
+                                                    </a>
+                                                </div>
+                                                <p class="service-desc text-black-56">
+                                                    A web-based system that helps manage student records, teacher activities, and academic tasks efficiently.
+                                                    <br><br>
+                                                    Built a dynamic portal that streamlines communication between students and teachers, supports assignment handling, and improves overall academic workflow with an intuitive interface.
+
+                                                </p>
+                                                <div class="service-btn">
+    <a href="https://github.com/integra8technologies/catalyst" target="_blank" class="tf-btn">
+        <span>View GitHub Repository</span>
+    </a>
+</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="br-line scrolling-effect effectBottom"></div>
+                                    <div class="service-accordion_item scrolling-effect effectBottom" role="presentation">
+                                        <div class="accordion-action collapsed" data-bs-target="#service-3" role="button" data-bs-toggle="collapse"
+                                            aria-controls="service-3" aria-expanded="true">
+                                            <h4 class="text letter-space--2 text-black-72">Hotel Room Booking Software</h4>
+                                            <div class="ic-wrap">
+                                                <span class="ic-accordion-custom"></span>
+                                            </div>
+                                        </div>
+                                        <div id="service-3" class="collapse" data-bs-parent="#accordion-service">
+                                            <div class="accordion-content">
+                                                <div class="tf-grid-layout sm-col-2">
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img width="340" height="206" src="assets/images/section/checkin.png" alt="Image">
+                                                        </div>
+                                                    </div>
+                                                    <div class="service-image">
+                                                        <div class="wrap_image">
+                                                            <img width="340" height="206" src="assets/images/section/checkin2.png" alt="Image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="service-tag">
+                                                    <a href="#" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Custom System Configuration
+                                                    </a>
+                                                    <a href="#" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Desktop Application Development
+                                                    </a>
+                                                    <a href="#" class="tag-item text-body-3 fw-medium text-black-72 link">
+                                                        Java & MySQL Integration
+                                                    </a>
+                                                </div>
+                                                <p class="service-desc text-black-56">
+                                                    Engineered a robust hotel room booking system using Java Swing and MySQL, supporting real-time booking operations, data management, and user-configurable settings. <br><br>
+                                                    Built a user-friendly hotel booking system with Java Swing, featuring dynamic room management, reservation tracking, and flexible settings tailored to business needs.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Service -->
+
+                            <!-- Tech Stack -->
+                            <div id="tech" class="section-tech-stack flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-tech-stack"></i>
+                                    Tech Stack
+                                </div>
+                                <h4 class="s-title letter-space--2 text-black-72 split-text effect-blur-fade">
+                                    See how my expertise with these <br class="d-none d-sm-block">
+                                    tools drives better results
+                                </h4>
+                                <ul class="tech-list">
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img loading="lazy" style="width: 35px;" src="assets/images/section/html.svg" alt="Image">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">HTML</p>
+                                                <p class="info__duty text-black-56 text-body-3">Leading design tool</p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="80">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="80">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="br-line"></li>
+
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img loading="lazy" style="width:35px" src="assets/images/section/css.svg" alt="Image">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">CSS</p>
+                                                <p class="info__duty text-black-56 text-body-3">Leading design tool</p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="80">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="80">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="br-line"></li>
+
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img loading="lazy" style="width: 35px;" src="assets/images/section/js.svg" alt="Image">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">JavaScript</p>
+                                                <p class="info__duty text-black-56 text-body-3">Leading design tool</p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="80">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="80">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="br-line"></li>
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img class="image-switch" data-dark="assets/images/section/tech-2_dark.svg" style="width: 35px;"
+                                                    src="assets/images/section/php.svg" alt="Image">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">PHP</p>
+                                                <p class="info__duty text-black-56 text-body-3">No-code website builder
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="90">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="90">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="br-line"></li>
+                                    
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img loading="lazy" style="width: 35px;" src="assets/images/section/java.svg" alt="Image">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">Java</p>
+                                                <p class="info__duty text-black-56 text-body-3">Raster graphics editor
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="60">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="60">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="br-line"></li>
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img loading="lazy" style="width: 35px;" src="assets/images/section/mysql-svgrepo-com.svg" alt="Image">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">MySQL</p>
+                                                <p class="info__duty text-black-56 text-body-3">Leading design tool</p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="80">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="80">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="br-line"></li>
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img loading="lazy" style="width: 35px;" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg" alt="Image">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">SpringBoot</p>
+                                                <p class="info__duty text-black-56 text-body-3">Leading design tool</p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="50">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="50">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="br-line"></li>
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img loading="lazy" style="width: 35px;" src="assets/images/section/dotnet-svgrepo-com.svg" alt="Image">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">.NET</p>
+                                                <p class="info__duty text-black-56 text-body-3">Leading design tool</p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="20">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="10">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="br-line"></li>
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img loading="lazy" style="width: 35px;" src="assets/images/section/react-svgrepo-com.svg" alt="Image">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">ReactNative</p>
+                                                <p class="info__duty text-black-56 text-body-3">Leading design tool</p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="40">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="40">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="br-line"></li>
+                                    <li class="wg-tech">
+                                        <div class="tech-infor effectFade fadeUp no-div">
+                                            <div class="tech_image">
+                                                <img loading="lazy" style="width: 35px;" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Logo_C_sharp.svg" alt="Image">
+                                            </div>
+                                            <div class="tech_info">
+                                                <p class="info__name fw-medium text-black-72">C#</p>
+                                                <p class="info__duty text-black-56 text-body-3">Leading design tool</p>
+                                            </div>
+                                        </div>
+                                        <div class="tech-progress">
+                                            <div class="progress-line" data-progress="15">
+                                                <p class="progress-num text-caption">
+                                                    <span class="counter">
+                                                        <span class="number" data-speed="1500" data-to="05">10</span>
+                                                        %
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Contact -->
+                            <div id="contact" class="section-contact flat-spacing">
+                                <div class="sect-tag text-caption fw-medium effectFade fadeUp no-div">
+                                    <i class="icon icon-send"></i>
+                                    Contact
+                                </div>
+                                <h4 class="s-title letter-space--2 split-text effect-blur-fade">
+                                    No forms, no friction. Just connect.
+                                    <!-- <br class="d-none d-lg-block"><br class="d-none d-lg-block"> -->
+                                </h4>
+                                <form class="form-contact" id="contactform" action="./assets/contact/contact-process.php" method="post"
+                                    novalidate="novalidate">
+                                    <div class="form-content effectFade fadeUp no-div">
+                                        <fieldset class="field-ip">
+                                            Jonathan Mark
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            jonathanmark1007@gmail.com
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            +94 076 1680 534
+                                        </fieldset>
+                                        <fieldset class="field-ip">
+                                            Feel free to reach out directly using the contact details below—I’m always open to new opportunities and conversations.
+                                        </fieldset>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /Contact -->
+
+                            <!-- Footer -->
+                            <div id="footer" class="tf-footer flat-spacing">
+                                <div class="block-quote effectFade fadeUp no-div">
+                                    <h5 class="quote-text font-3 fw-normal text-black-72">
+                                        <span class="text-black-56">“</span>
+                                        Programs must be written for people to read, and only incidentally for machines to execute.
+                                        <span class="text-black-56">“</span>
+                                    </h5>
+                                    <p class="quote-author font-3 text-black-56 h6 text-end ">
+                                        Harold Abelson
+                                    </p>
+                                </div>
+                                <div class="br-line"></div>
+                                <div class="jonathan effectFade fadeUp no-div">
+    <svg viewBox="0 0 600 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text 
+            x="0" 
+            y="130" 
+            fill="black" 
+            fill-opacity="0.72" 
+            style="font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; font-size: 130px; letter-spacing: -2px;">
+            Jonathan
+        </text>
+    </svg>
+</div>
+                                <div class="foot-bottom">
+                                    <p class="text-nocopy text-black-56 effectFade fadeUp no-div">
+                                        © All rights reserved <br>
+                                        2025 Jonathan Mark <br> Portfolio
+                                    </p>
+                                    <div class="isak effectFade fadeUp no-div">
+    <svg viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+        <text
+            x="70"
+            y="150"
+            font-size="200"
+            font-family="Arial, Helvetica, sans-serif"
+            fill="none"
+            stroke="black"
+            stroke-width="2"
+            stroke-opacity="0.56"
+            letter-spacing="5">
+            Mark
+        </text>
+    </svg>
+</div>
+                                </div>
+                            </div>
+                            <!-- /Footer -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>`;
+  }
+}
+customElements.define("main-content", Content);
